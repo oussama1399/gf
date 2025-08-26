@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 // Vérification de l'authentification
 if (!isset($_SESSION['utilisateur'])) {
-    header("Location: connection.php");
+    header("Location: index.php");
     exit();
 }
 

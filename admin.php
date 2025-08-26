@@ -268,6 +268,7 @@ $nbSuspendus = $pdo->query("
            </div>
            
           
+            <?php if (!isset($_SESSION['utilisateur']['fonction']) || $_SESSION['utilisateur']['fonction'] !== 'AREF'): ?>
             <div class="col-md-6 col-lg-3">
                     <div class="stat-card stat-card-success h-100 p-4 text-center">
                         <div class="stat-icon stat-icon-success">
@@ -278,6 +279,7 @@ $nbSuspendus = $pdo->query("
                         <a href="utilisateur.php" class="btn btn-access btn-success">Accéder</a>
                     </div>
             </div>
+            <?php endif; ?>
           
 
             <div class="col-md-6 col-lg-3">
